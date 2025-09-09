@@ -15,12 +15,30 @@ function concatenateStrings (str1, str2) {
 
 // for the first function expression, let's write code that displays returns one result if the number entered by the user is less than 100 ("number is less than 100"), and another message if the number is greater than or equal to 100 ("that is 100 or greater")
 // name this variable compareToHundred
-// TO DO
+let compareToHundred = function (number) {
+    if (number < 100) {
+        return number + " is less than 100";
+    }else{
+        return number + " is greater than or equal to 100 ";
+    }
+}
 
 
 // for the second function expression, let's write code that tells the user whether or not their answer to a trivia question is correct. This will accept a parameter for a letter answer, and can use either a switch statement or a series of if/else/if statements for the logic
 // name this variable quizAnswer
-// TO DO
+let quizAnswer = function (answer) {
+    if (answer === "d"){
+        return "You got it! GIT417 is the Introductory JavaScript course."
+    }else if (answer === "a"){
+        return "Nope. GIT215 is the Introductory HTML/CSS course." 
+    }else if (answer === "b"){
+        return "Nope. GIT337 is the Intermediate HTML/CSS course."
+    }else if (answer === "c"){
+        return "Nope. GIT414 is the Responsive HTML/CSS course."
+    }else{
+        return "Please select an answer from the list."
+    }
+}
 		// if they answered a return "Nope. GIT215 is the Introductory HTML/CSS course."
 
 	
@@ -35,12 +53,15 @@ function concatenateStrings (str1, str2) {
 
 // For box five, re-write the first standard function in the arrow function syntax
 // name the variable addTwoNumsArrow
-// TO DO
+let addTwoNumsArrow = (num1, num2) => num1 + num2;
 
 
 // For box five, re-write the second standard function in the arrow function syntax
 // name the variable concatenateStringsArrow
-// TO DO
+let concatenateStringsArrow = (str1, str2) => str1 + " " + str2;
+
+console.log(addTwoNumsArrow(2,2));
+console.log(concatenateStringsArrow("taco","cat"));
 
 
 
